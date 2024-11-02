@@ -1,0 +1,226 @@
+/********************************SHARED CSS*****************************/
+#header {
+  margin: 2em 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#main-nav {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+  display: inline-block;
+}
+
+#main-nav ul li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#main-nav ul li a:hover {
+  color: #007BFF; 
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
+/**************************************************************************/
+
+/***************************HOMEPAGE CSS**********************************/
+body#homepage {
+  margin: 0;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  background-image: url("../images/mangobg.jpg");
+}
+
+#homepage #header {
+  margin: 0;
+  position: relative;
+}
+
+#homepage #header h1 {
+  color: white; 
+  font-size: 2.5em;
+}
+
+#homepage main {
+  display: grid; /* add grids */
+  grid-template-columns: repeat(2, 1fr); /* two top, two bottom */
+  gap: 20px; /* space between the boxes */
+  overflow: hidden;
+  float: left;
+}
+
+#homepage #page-wrapper {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  color: #FFF5EE;
+  text-shadow: 2px 2px 6px black; /*makes text drop shadow*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#homepage img { /* Center images */
+  border-radius: 10px; /* makes the corners a little rounded */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  width: 60%;
+}
+
+#mangobox1, #mangobox2, #mangobox3, #mangobox4 { /* adds bg image to box */
+  background-color: #f9f9f9; 
+  padding: 2em; 
+  border-radius: 8px; 
+  border: 1px solid #ddd; 
+  box-sizing: border-box;
+  position: relative;
+  background-image: url("../images/tropical.jpg");
+}
+
+#homepage p {
+  font-size: 1.25em;
+}
+/**************************************************************************/
+
+/****************************RESUME CSS************************************/
+body#resume {
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background-image: url("../images/blackbg.jpg");
+  background-position: center;
+}
+
+#resume #header {
+  color: white;
+  margin: 0;
+  position: relative;
+}
+
+#resume #header h1 {
+  font-size: 2.5em;
+}
+
+#resume #page-wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 2em;
+  box-shadow: 0px 4px 8px #FFFFC5; /* light yellow box shadow glow */
+  display: grid;
+  grid-template-columns: 70% 30%; /* 70% main content, 30% side content */
+  gap: 20px;
+  background-color: rgba(240, 240, 240, 1);  /* white background */
+  border-radius: 8px;
+  overflow: hidden;
+} 
+
+#resume-main {
+  font-size: 1em;
+  color: #333;
+  float: left;
+  width: 80%;
+}
+
+#resume-main ul {
+  font-size: 1.1em;
+}
+#resume-side {
+  background-color: #f9f9f9;
+  font-size: 1.1em;
+  padding: 1.5em;
+  border-radius: 10px;
+  float: right;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*********************************************************************/
+
+/****************************VIDEOGAME CSS****************************/
+body#videogame {
+  margin: 0;
+  font-family: Arial, Helvetica, Verdana, sans-serif;
+  background-image: url("../images/space1.jpeg");
+  background-size: cover;
+  text-align: center;
+}
+
+#videogame #header {
+  color: white;
+  margin: 0;
+}
+
+#videogame #header h1 {
+  font-size: 2.5em;
+}
+
+#videogame #page-wrapper {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#videogame ul {
+  list-style-position: inside;
+  display: inline-block;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+#videogame ul li {
+  margin-bottom: 10px; 
+}
+
+#videogame section {
+  background-color: #f9f9f9;
+  padding: 2em;
+  margin: 1em;
+  border-radius: 8px;
+  border: 1px solid #9FE2BF;
+  position: relative;
+  background-image: linear-gradient(to right top, #1c2951, #fcfbfe, #49151F); /* makes a gradient */
+}
+
+#videogame img { /* centers image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#videogame h2 {
+  margin: 0;
+}
+
+iframe { /* center video */
+  display: block;
+  margin: 20px auto;
+}
+/*********************************************************************/
