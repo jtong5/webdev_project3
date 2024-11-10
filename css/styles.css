@@ -219,12 +219,31 @@ body#videogame {
   margin: 0;
 }
 
-iframe { /* center video */
+#videogame ul.slider {
   display: block;
-  margin: 20px auto;
-  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  padding: 0;
 }
 
+.bx-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent !important; /** fix for white box around slider **/
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.bx-wrapper .bx-prev {
+  left: -15px !important; /** moves the left button a little more left **/
+}
+
+.bx-wrapper .bx-next {
+  right: -15px !important; /** moves the right button a little more right **/
+}
 /*********************************************************************/
 
 /******************************MAP CSS***********************************/

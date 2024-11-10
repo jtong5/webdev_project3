@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $('.slider').bxSlider({
-    mode: 'horizontal',
-    captions: true,
+    mode: 'fade',
     slideWidth: 600,
     responsive: true,
+    touchEnabled: true,
   });
 });
