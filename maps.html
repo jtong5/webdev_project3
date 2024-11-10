@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <title>Google Maps</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0">
-    <title>Map</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body id="google-maps">
     <header id="header">
@@ -21,39 +23,5 @@
     </header>
     <div id="map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap" async defer></script>
-    <script>
-      function initMap() {
-        var el = document.getElementById('map');
-        var myLocation = new google.maps.LatLng(41.835117, -87.627130); // IIT Perlstein Hall coordinates
-        var mapOptions = {
-          center: myLocation,
-          zoom: 18,
-          mapTypeId: google.maps.MapTypeId.SATELLITE,
-          mapTypeControlOptions: {
-            position: google.maps.ControlPosition.BOTTOM_CENTER
-          }
-        };
-
-        var myMap = new google.maps.Map(el, mapOptions);
-
-        var marker = new google.maps.Marker({
-          position: myLocation,
-          map: myMap,
-          animation: google.maps.Animation.BOUNCE,
-        });
-
-        var contentString = '<h1>IIT Perlstein Hall</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate odit optio, voluptatem placeat odio dignissimos illo magnam esse asperiores voluptas at iure vero eum, nemo aperiam? Ipsam, atque nobis rem.</p>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        google.maps.event.addListener(marker, 'mouseover', function() {
-          infowindow.open(myMap, marker);
-        });
-      }
-
-      google.maps.event.addDomListener(window, 'load', initMap);
-    </script>
   </body>
 </html>
