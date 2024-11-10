@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.video-slider').bxSlider({
+  $('.slider').bxSlider({
     mode: 'horizontal',
     captions: true,
     slideWidth: 600,
