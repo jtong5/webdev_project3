@@ -230,13 +230,13 @@ iframe { /* center video */
 /******************************MAP CSS***********************************/
 
 #map {
-  height: 100%;
+  height: 600px;
+  width: 850px;
+  margin: 0 auto;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body#google-maps {
+  font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
 /***********************************************************************/
