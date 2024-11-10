@@ -5,6 +5,7 @@
  * Licensed under MIT (http://opensource.org/licenses/MIT)
  */
 
+/** Got this code from https://github.com/stevenwanderski/bxslider-4 **/
 ;(function($) {
 
   var defaults = {
