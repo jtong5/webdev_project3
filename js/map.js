@@ -7,7 +7,7 @@ function initMap() {
     zoom: 18,
     mapTypeId: google.maps.MapTypeId.SATELLITE,
     mapTypeControlOptions: {
-      position: google.maps.ControlPosition.BOTTOM_CENTER
+      position: google.maps.ControlPosition.TOP_LEFT
     },
     zoomControl: true,  
     zoomControlOptions: {
@@ -36,7 +36,11 @@ function initMap() {
   google.maps.event.addListener(marker, 'mouseover', function() {
     infowindow.open(myMap, marker);
   });
+  
+  // add custom street view
+  var streetViewControl = new google.maps.StreetViewPanorama(document.getElementById('street-view'), {
+  position: myLocation,
+  pov: { heading: 165, pitch: 0 }
+  });
+myMap.setStreetView(streetViewControl);
 }
-
-// Make sure initMap is called after the Google Maps API has loaded
-google.maps.event.addDomListener(window, 'load', initMap);
