@@ -283,3 +283,70 @@ body#google-maps {
 }
 /***********************************************************************/
 
+/****************************Media Queries******************************/
+
+@media (min-width: 1024px) { /** desktop **/
+
+#homepage main {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+#homepage h1 {
+  font-size: 2.5em;
+}
+
+#homepage img {
+  width: 60%;
+}
+
+#homepage #page-wrapper {
+  padding: 2em;
+  max-width: 75%;
+}
+
+#mangobox1, #mangobox2, #mangobox3, #mangobox4 {
+  padding: 2em; 
+  }
+}
+
+@media (max-width: 600px) { /** mobile **/
+
+#homepage main {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+#homepage #page-wrapper {
+  padding: 1em;
+  max-width: 90%;
+}
+
+#homepage h1 {
+  font-size: 1.8em; 
+}
+
+#homepage img {
+  width: 90%;
+}
+
+#mangobox1, #mangobox2, #mangobox3, #mangobox4 {
+  padding: 1.5em;
+}
+
+#main-nav ul {
+  display: block;
+  text-align: left;
+}
+
+#main-nav ul li {
+  display: block;
+  margin: 5px 0;
+}
+
+#main-nav ul li a {
+  font-size: 1em; 
+  }
+}
+
+/***********************************************************************/
